@@ -170,8 +170,10 @@ export const HotelContextProvider = ({ children }) => {
 
   useEffect(() => {
     const userToken = JSON.parse(localStorage.getItem("token"));
-    setUserIdHotel(userToken.userId);
-  }, [userIdHotel]);
+    if (userToken !== null) {
+        setUserIdHotel(userToken.userId);
+    }
+}, []);
 
   useEffect(() => {});
   const toggleSearch = () => {

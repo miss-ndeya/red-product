@@ -1,11 +1,9 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
-import { MdOutlineVerifiedUser } from "react-icons/md";
 import Link from "next/link";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import { devices } from "../../globalStyle";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { ThreeDots } from "react-loader-spinner";
